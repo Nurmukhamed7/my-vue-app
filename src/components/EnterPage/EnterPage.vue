@@ -5,7 +5,7 @@
 				<img src="/images/logo/logo-vertical.svg" alt="logo" />
 			</a>
 			<a href="#" :class="$style.languages">
-				<img src="/images/logo/languages-circle.svg" alt="logo" />
+				<img src="/images/logo/languages-circle.svg" alt="languages" />
 				<span>RU</span>
 			</a>
 		</div>
@@ -16,17 +16,35 @@
 				<h2>EASY LIFE HOMES</h2>
 			</div>
 			<div :class="$style.buttons">
-				<button>Войти как администратор EasyLife</button>
-				<button>Войти как менеджер комплекса</button>
+				<button @click="$router.push({ name: 'Admin' })">
+					Войти как администратор EasyLife
+				</button>
+				<button @click="$router.push({ name: 'Manager' })">
+					Войти как менеджер комплекса
+				</button>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-export default {
-	name: 'EnterPage',
-}
+import { computed, ref } from 'vue'
+
+const activePage = ref(1)
+
+const url = computed({
+	get() {
+		return window.location.href
+	},
+
+	set(value) {
+		window.history.pushState({}, '', value)
+	},
+})
+
+// export default {
+// 	name: 'EnterPage',
+// }
 </script>
 
 <style module lang="scss">
