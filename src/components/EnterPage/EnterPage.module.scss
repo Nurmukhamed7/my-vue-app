@@ -1,0 +1,77 @@
+@import '../../scss/variables.scss';
+
+.content {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	position: relative;
+}
+
+.left__content {
+	position: absolute;
+	top: 31px;
+	left: 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 41px;
+}
+
+.languages {
+	display: flex;
+	text-align: center;
+	font-weight: 600;
+	gap: 2.8px;
+
+	> span {
+		color: black;
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+
+	flex-direction: column;
+	gap: 49px;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+
+	text-align: center;
+
+	> h2:nth-child(1) {
+		font-size: 25px;
+		font-weight: bold;
+	}
+	> h2:nth-child(2) {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	> h2:nth-child(3) {
+		color: $DarkPurple;
+		font-size: 25px;
+		font-weight: 500;
+	}
+}
+.buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+
+	> button {
+		color: white;
+		font-weight: 500;
+		background: $Purple;
+		padding: 15px 78px;
+		border-radius: 10px;
+
+		border: none;
+
+		&:hover {
+			background: lighten($Purple, 7%);
+		}
+	}
+}

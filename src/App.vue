@@ -1,18 +1,13 @@
 <template>
-	<Button />
-	<Catalog />
+	<EnterPage />
 </template>
 
-<script>
-import Button from './components/button/Button.vue'
-import Catalog from './components/catalog/Catalog.vue'
-
-export default {
-	components: {
-		Button,
-		Catalog,
-	},
-}
+<script setup>
+import EnterPage from './components/EnterPage/EnterPage.vue'
 </script>
 
-<style lang="scss"></style>
+<style module lang="scss">
+@import './scss/main.scss';
+@import './scss/reset.scss';
+@import './scss/variables.scss';
+</style>
