@@ -1,11 +1,10 @@
 <template>
+	<v-icon name="fa-gamepad" scale="1.5" />
+
 	<RouterView />
-	<EnterPage />
 </template>
 
-<script setup>
-import EnterPage from './components/EnterPage/EnterPage.vue'
-</script>
+<script setup></script>
 
 <style module lang="scss">
 @import './scss/main.scss';

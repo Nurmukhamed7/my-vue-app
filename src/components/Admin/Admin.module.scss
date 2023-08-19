@@ -1,5 +1,20 @@
 @import '../../scss/variables.scss';
 
-.content {
-	background: red;
+.container {
+	background: blue;
+	display: flex;
+	justify-content: end;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 300px;
+	font-size: 14px;
+	font-weight: 600;
+}
+.user {
+	display: flex;
+	align-items: center;
 }
