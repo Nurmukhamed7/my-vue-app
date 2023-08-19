@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
+// Иконки
 import { OhVueIcon, addIcons } from 'oh-vue-icons'
-import { FaGamepad } from 'oh-vue-icons/icons'
-
-addIcons(FaGamepad)
+import { FaGamepad, FcGlobe, IoSearchOutline } from 'oh-vue-icons/icons'
+addIcons(FaGamepad, IoSearchOutline, FcGlobe)
 
 import router from './router'
 import './scss/main.scss'

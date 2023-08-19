@@ -1,10 +1,8 @@
 <template>
-	<v-icon name="fa-gamepad" scale="1.5" />
-
 	<RouterView />
 </template>
 
-<script setup></script>
+<script></script>
 
 <style module lang="scss">
 @import './scss/main.scss';

@@ -1,7 +1,11 @@
 <template>
 	<div :class="$style.container">
 		<div :class="$style.menu">
-			<input type="text" placeholder="Название Комплекса" />
+			<div :class="$style.search__container">
+				<v-icon name="io-search-outline" />
+				<input type="text" placeholder="Search..." />
+			</div>
+
 			<span>Список Комплексов</span>
 			<div :class="$style.user">
 				<span
