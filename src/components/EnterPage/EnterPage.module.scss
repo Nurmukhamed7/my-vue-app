@@ -8,26 +8,6 @@
 	position: relative;
 }
 
-.left__content {
-	position: absolute;
-	top: 31px;
-	left: 40px;
-	display: flex;
-	flex-direction: column;
-	gap: 41px;
-}
-
-.languages {
-	display: flex;
-	text-align: center;
-	font-weight: 600;
-	gap: 2.8px;
-
-	> span {
-		color: black;
-	}
-}
-
 .container {
 	display: flex;
 	align-items: center;

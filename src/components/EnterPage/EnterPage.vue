@@ -1,14 +1,6 @@
 <template>
 	<div :class="$style.content">
-		<div :class="$style.left__content">
-			<a href="#">
-				<img src="/images/logo/logo-vertical.svg" alt="logo" />
-			</a>
-			<a href="#" :class="$style.languages">
-				<img src="/images/logo/languages-circle.svg" alt="languages" />
-				<span>RU</span>
-			</a>
-		</div>
+		<LogoAndLanguage />
 		<div :class="$style.container">
 			<div :class="$style.text">
 				<h2>Добро пожаловать</h2>
@@ -27,24 +19,8 @@
 	</div>
 </template>
 
-<script>
-import { computed, ref } from 'vue'
-
-const activePage = ref(1)
-
-const url = computed({
-	get() {
-		return window.location.href
-	},
-
-	set(value) {
-		window.history.pushState({}, '', value)
-	},
-})
-
-// export default {
-// 	name: 'EnterPage',
-// }
+<script setup>
+import LogoAndLanguage from '../ui/LogoAndLanguage/LogoAndLanguage.vue'
 </script>
 
 <style module lang="scss">
